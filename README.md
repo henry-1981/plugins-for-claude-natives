@@ -8,6 +8,7 @@ A collection of Claude Code plugins for power users.
 |--------|-------------|
 | [agent-council](./plugins/agent-council/) | Collect and synthesize opinions from multiple AI agents (Gemini, GPT, Codex) |
 | [clarify](./plugins/clarify/) | Transform vague requirements into precise specifications through iterative questioning |
+| [interactive-review](./plugins/interactive-review/) | Interactive markdown review with web UI for visual plan/document approval |
 | [say-summary](./plugins/say-summary/) | Speaks a short summary of Claude's response using macOS TTS (Korean/English) |
 
 ## Installation
