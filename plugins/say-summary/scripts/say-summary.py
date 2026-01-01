@@ -104,7 +104,7 @@ async def summarize_with_haiku(text: str) -> str:
 
     response_text = ""
     try:
-        async for message in query(prompt=truncated, options=options):
+        async for message in query(prompt=f"요약할 텍스트: {truncated}", options=options):
             if isinstance(message, AssistantMessage):
                 for block in message.content:
                     if isinstance(block, TextBlock):
