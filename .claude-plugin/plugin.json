@@ -1,0 +1,10 @@
+{
+  "name": "plugins-for-claude-natives",
+  "version": "0.1.0",
+  "description": "Claude Code 네이티브 사용자를 위한 유틸리티 플러그인 모음",
+  "author": {
+    "name": "Team Attention",
+    "url": "https://github.com/team-attention"
+  },
+  "repository": "https://github.com/team-attention/plugins-for-claude-natives"
+}

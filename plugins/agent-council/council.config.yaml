@@ -12,11 +12,7 @@ council:
   #   - color: ANSI color (RED, GREEN, BLUE, YELLOW, CYAN)
 
   members:
-    - name: claude
-      command: "claude -p"
-      emoji: "🧠"
-      color: "CYAN"
-
+    
     - name: codex
       command: "codex exec"
       emoji: "🤖"
@@ -36,8 +32,8 @@ council:
     # Optional: run synthesis inside council.sh via CLI (otherwise the host agent synthesizes)
     # command: "codex exec"
 
-  # Execution settings
+    # Execution settings
   settings:
-    timeout: 120            # Timeout seconds per agent (0 to disable)
-    exclude_chairman_from_members: true  # Avoid calling the chairman as a member by default
+    timeout: 120 # Timeout seconds per agent (0 to disable)
+    exclude_chairman_from_members: true # Avoid calling the chairman as a member by default
     # synthesize: true       # Force Stage 3 synthesis inside council.sh (requires chairman.command or --chairman codex/gemini)
