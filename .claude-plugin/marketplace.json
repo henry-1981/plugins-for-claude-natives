@@ -1,26 +1,27 @@
 {
   "name": "team-attention-plugins",
+  "owner": "team-attention",
   "description": "Claude Code plugins for power users by Team Attention",
   "plugins": [
     {
       "name": "agent-council",
       "description": "Collect and synthesize opinions from multiple AI agents (Gemini, GPT, Codex)",
-      "path": "plugins/agent-council"
+      "source": "plugins/agent-council"
     },
     {
       "name": "clarify",
       "description": "Transform vague requirements into precise specifications through iterative questioning",
-      "path": "plugins/clarify"
+      "source": "plugins/clarify"
     },
     {
       "name": "interactive-review",
       "description": "Interactive markdown review with web UI for visual plan/document approval",
-      "path": "plugins/interactive-review"
+      "source": "plugins/interactive-review"
     },
     {
       "name": "say-summary",
       "description": "Speaks a short summary of Claude's response using macOS TTS (Korean/English)",
-      "path": "plugins/say-summary"
+      "source": "plugins/say-summary"
     }
   ]
 }
