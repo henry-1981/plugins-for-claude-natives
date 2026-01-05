@@ -10,6 +10,7 @@ A collection of Claude Code plugins for power users.
 | [clarify](./plugins/clarify/) | Transform vague requirements into precise specifications through iterative questioning |
 | [interactive-review](./plugins/interactive-review/) | Interactive markdown review with web UI for visual plan/document approval |
 | [say-summary](./plugins/say-summary/) | Speaks a short summary of Claude's response using macOS TTS (Korean/English) |
+| [youtube-digest](./plugins/youtube-digest/) | Summarize YouTube videos with transcript, insights, Korean translation, and quizzes |
 
 ## Installation
 
