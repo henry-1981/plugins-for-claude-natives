@@ -22,12 +22,16 @@ import json
 import sys
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from calendar_client import CalendarClient, ADCCalendarClient, fetch_all_events, get_all_accounts
 
 
-def format_event_for_display(event: dict) -> str:
+def format_event_for_display(event: dict, tz: ZoneInfo = None) -> str:
     """이벤트를 사람이 읽기 좋은 형식으로 변환."""
+    if tz is None:
+        tz = ZoneInfo("Asia/Seoul")
+
     start = event["start"]
     end = event["end"]
     account = event["account"]
@@ -37,8 +41,8 @@ def format_event_for_display(event: dict) -> str:
     if event.get("all_day"):
         time_str = "종일"
     else:
-        start_dt = datetime.fromisoformat(start.replace("Z", "+00:00"))
-        end_dt = datetime.fromisoformat(end.replace("Z", "+00:00"))
+        start_dt = datetime.fromisoformat(start.replace("Z", "+00:00")).astimezone(tz)
+        end_dt = datetime.fromisoformat(end.replace("Z", "+00:00")).astimezone(tz)
         time_str = f"{start_dt.strftime('%H:%M')}-{end_dt.strftime('%H:%M')}"
 
     # 계정별 아이콘
