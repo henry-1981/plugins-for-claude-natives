@@ -2,6 +2,10 @@
 
 macOS에서 카카오톡 메시지를 발송하고 읽는 Claude Code 플러그인.
 
+## Demo
+
+![KakaoTalk Demo](../../assets/kakaotalk.gif)
+
 ## Features
 
 - **메시지 발송**: 자연어로 카카오톡 메시지 전송 (발송 전 확인)
