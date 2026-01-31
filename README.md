@@ -14,6 +14,7 @@ A collection of Claude Code plugins for power users who want to extend Claude Co
   - [interactive-review](#interactive-review) - Review plans with a web UI
   - [say-summary](#say-summary) - Hear responses via text-to-speech
   - [youtube-digest](#youtube-digest) - Summarize and quiz on YouTube videos
+  - [gmail](#gmail) - Multi-account Gmail integration
   - [google-calendar](#google-calendar) - Multi-account calendar integration
   - [kakaotalk](#kakaotalk) - Send/read KakaoTalk messages on macOS
   - [session-wrap](#session-wrap) - Session wrap-up + history analysis toolkit
@@ -45,6 +46,7 @@ A collection of Claude Code plugins for power users who want to extend Claude Co
 | [interactive-review](./plugins/interactive-review/) | Interactive markdown review with web UI for visual plan/document approval |
 | [say-summary](./plugins/say-summary/) | Speaks a short summary of Claude's response using macOS TTS (Korean/English) |
 | [youtube-digest](./plugins/youtube-digest/) | Summarize YouTube videos with transcript, insights, Korean translation, and quizzes |
+| [gmail](./plugins/gmail/) | Multi-account Gmail integration with email reading, searching, sending, and management |
 | [google-calendar](./plugins/google-calendar/) | Multi-account Google Calendar integration with parallel querying and conflict detection |
 | [kakaotalk](./plugins/kakaotalk/) | Send and read KakaoTalk messages on macOS using Accessibility API |
 | [session-wrap](./plugins/session-wrap/) | Session wrap-up, history analysis, and session validation toolkit |
@@ -243,6 +245,40 @@ Drop a YouTube URL and get a complete breakdown: summary, key insights, full Kor
 5. **Deep Research** (optional) - Web search to expand on the topic
 
 **Output location:** `research/readings/youtube/YYYY-MM-DD-title.md`
+
+---
+
+### gmail
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png" width="120" alt="Gmail">
+
+**Manage multiple Gmail accounts from Claude Code.**
+
+Read, search, send, and manage emails across multiple Google accounts with full Gmail API integration.
+
+**Trigger phrases:**
+- "check my email"
+- "send an email to..."
+- "search for emails from..."
+- "reply to this email"
+- "mark as read"
+
+**Features:**
+- Multi-account support (work, personal, etc.)
+- Gmail search query syntax support
+- Email sending with attachments and HTML
+- Label and draft management
+- 4-step email sending workflow with test delivery
+
+**Setup options:**
+1. **Claude in Chrome** (recommended for non-developers): Let Claude guide you through GCP Console setup via browser automation
+2. **Manual setup**: Create Google Cloud project with Gmail API, then run setup script
+
+```bash
+# One-time setup per account
+uv run python scripts/setup_auth.py --account work
+uv run python scripts/setup_auth.py --account personal
+```
 
 ---
 

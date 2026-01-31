@@ -1,0 +1,14 @@
+# OAuth credentials and tokens
+accounts/
+references/credentials.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.uv/
+uv.lock
+
+# macOS
+.DS_Store
