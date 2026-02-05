@@ -197,7 +197,7 @@ If a plugin lacks capabilities.yaml:
 
 - Cache capability matrix for session duration
 - Invalidate on plugin install/uninstall/update
-- Store cache at `.moai/supervisor/capability_cache.yaml`
+- Store cache at `~/.claude/cache/cowork-supervisor/capability_cache.yaml`
 
 ## Output Requirements
 
