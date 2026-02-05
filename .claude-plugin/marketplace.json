@@ -63,7 +63,7 @@
     },
     {
       "name": "cowork-supervisor",
-      "description": "Strategic orchestrator for multi-plugin coordination - clarifies intent, discovers capabilities, plans execution, orchestrates plugins",
+      "description": "Strategic orchestrator for multi-plugin coordination. Clarifies intent, discovers capabilities, plans execution, orchestrates plugins, and aggregates results",
       "source": "./plugins/cowork-supervisor"
     }
   ]
